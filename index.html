@@ -1,0 +1,39 @@
+<DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" >
+    <title>Welcome to Fortune Cookies</title>
+    <!-- Author:Zhiping Yu, Student number : 000822513  September 24, 2020
+        This file is provided to user to fill in a form
+     -->
+    <style>
+
+        input{
+            font-size: 20px;
+        }
+        input[type="submit"]{
+            background-color: pink;
+        }
+        label{
+            font-size: 20px;
+        }
+        p{
+            font-size: 25px;
+        }
+       
+    </style>
+</head>
+<body>
+ <div>
+  <form  action="fortunecookies.php" method="get">
+        <label>Name:</label> <input type="text" name="name" required placeholder="enter your name"><br><br>
+        <label>Number of Cookies:</label> <input type="number" name="quantity"placeholder="enter positive integer"><br><br>
+        <label>Color of Cookies:</label> <input type="color" name ="color"><br>
+        <p>Please specify lucky number range:</p>
+        <label>Lucky Number Minimum Value:</label><input type="number" name="minvalue"><br><br>
+        <label>Lucky Number Maximum Value:</label><input type="number" name="maxvalue"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>
